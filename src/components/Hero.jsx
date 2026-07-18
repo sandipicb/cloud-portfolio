@@ -1,20 +1,31 @@
+import "./Hero.css";
+
 function Hero() {
-    return (
-        <section>
-            <h1>Sandip Chakroborty</h1>
+  return (
+    <section className="hero">
+      <div className="hero-content">
+        <h1>Hi, I'm Sandip Chakroborty</h1>
 
-            <h2>Cloud & Network Engineer</h2>
+        <h2>Network Engineer | AWS Solutions Architect | Google Cloud PCA</h2>
 
-            <p>AWS Certified Solutions Architect</p>
+        <p>
+          I have 12+ years of experience in enterprise networking, security,
+          cloud infrastructure, and DevOps. I specialize in AWS, Google Cloud,
+          Kubernetes, Docker, Cisco, Fortinet, and Check Point technologies.
+        </p>
 
-            <p>Google Cloud Associate Cloud Engineer</p>
+        <div className="hero-buttons">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            Download Resume
+          </a>
 
-            <p>Google Professional Cloud Architect (Pursuing)</p>
-
-            <button>Download Resume</button>
-
-        </section>
-    );
+          <a href="#contact">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Hero;
