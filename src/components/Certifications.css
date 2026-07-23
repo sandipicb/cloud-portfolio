@@ -1,0 +1,36 @@
+.certifications-section {
+    background-color: #0f172a;
+    color:white;
+    padding: 80px 10%;
+}
+
+.certifications-section h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cert-card{
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition:0.3s;
+}
+
+.cert-card:hover{
+    transform: translateY(-10px);
+}
+
+.cert-card img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.cert-card h3{
+    color: #38bdf8;
+    font-size: 1.1rem;
+}
+
+.cert-card p{
+    color: #cbd5e1;
+}

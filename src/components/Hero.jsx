@@ -1,31 +1,75 @@
 import "./Hero.css";
+import profile from "../assets/images/profile.png";
+import gcpPcaBadge from "../assets/images/gcp-pca.png";
+import gcpBadge from "../assets/images/gcp-ace.png";
+import awsBadge from "../assets/images/aws-badge.png";
+
+
+import { TypeAnimation } from "react-type-animation";
+
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-content">
+      <div className="hero-left">
         <h1>Hi, I'm Sandip Chakroborty</h1>
 
-        <h2>Network Engineer | AWS Solutions Architect | Google Cloud PCA</h2>
-
+        <TypeAnimation
+          sequence={[
+            "Infrastructure Engineer",
+            1500,
+            "GCP Professional Cloud Architect",
+            1500,
+            "AWS Solution Architect",
+            1500,
+            "Google Cloud Engineer",
+            1500,
+            "Cloud Architect",
+            1500,
+          ]}
+          wrapper="h2"
+          repeat={Infinity}
+        />
         <p>
-          I have 12+ years of experience in enterprise networking, security,
-          cloud infrastructure, and DevOps. I specialize in AWS, Google Cloud,
-          Kubernetes, Docker, Cisco, Fortinet, and Check Point technologies.
+          12+ years of experience designing enterprise networking,
+          cloud infrastructure, Kubernetes, Docker, and security solutions.
         </p>
 
         <div className="hero-buttons">
-          <a href="/resume.pdf" target="_blank" rel="noreferrer">
+          <a href="/resume.pdf" target="_blank" rel="nonreferrer">
             Download Resume
           </a>
-
           <a href="#contact">
             Contact Me
           </a>
+        </div>
+
+        <div className="social-icons">
+          <a href="https://linkedin.com/in/sandip-chakroborty-35b219195" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+
+          <a href="https://github.com/sandipicb" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+
+          <a href="mailto:sandipcloudtech@gmail.com">
+            <FaEnvelope />
+          </a>
+
+        </div>
+      </div>
+      <div className="hero-right"> 
+        <img src={profile} alt="Profile" className="profile-photo" />
+        <div className="certifications">
+          <img src={gcpPcaBadge} alt="GCP PCA" />
+          <img src={gcpBadge} alt="GCP" />
+          <img src={awsBadge} alt="AWS" />
+          
         </div>
       </div>
     </section>
   );
 }
-
-export default Hero;
+export default Hero; 
