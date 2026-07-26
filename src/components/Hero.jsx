@@ -32,8 +32,9 @@ function Hero() {
           repeat={Infinity}
         />
         <p>
-          12+ years of experience designing enterprise networking,
-          cloud infrastructure, Kubernetes, Docker, and security solutions.
+          I design secure, scalable, and cost-effective cloud and enterprise network
+          solutions using AWS, Google Cloud, Kubernetes, Docker, and modern networking
+          technologies.
         </p>
 
         <div className="hero-buttons">
@@ -43,6 +44,23 @@ function Hero() {
           <a href="#contact">
             Contact Me
           </a>
+        </div>
+
+        <div className="hero-stats">
+          <div className="stat">
+            <h3>12+</h3>
+            <p>Years of Experience</p>
+          </div>
+
+          <div className="stat">
+            <h3>50+</h3>
+            <p>Projects</p>
+          </div>
+
+          <div className="stat">
+            <h3>3</h3>
+            <p>Cloud Certifications</p>
+          </div>
         </div>
 
         <div className="social-icons">
@@ -60,13 +78,13 @@ function Hero() {
 
         </div>
       </div>
-      <div className="hero-right"> 
+      <div className="hero-right">
         <img src={profile} alt="Profile" className="profile-photo" />
         <div className="certifications">
           <img src={gcpPcaBadge} alt="GCP PCA" />
           <img src={gcpBadge} alt="GCP" />
           <img src={awsBadge} alt="AWS" />
-          
+
         </div>
       </div>
     </section>

@@ -1,0 +1,30 @@
+.contact {
+    background: #0f172a;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px; 
+}
+
+.contact-card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-card svg {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
