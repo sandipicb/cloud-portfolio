@@ -1,0 +1,57 @@
+.experience {
+    background: #111827;
+    color: white;
+    padding: 80px 10%;
+}
+
+.experience h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.timeline{
+    position: relative;
+    margin-left: 20px;
+    border-left: 3px solid #38bdf8;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding:  25px;
+    background: #1e293b;
+    border-radius: 12px;
+}
+
+.timeline-content h4 {
+    margin-top: 5px;
+}
+
+.timeline-content span{
+    display: block;
+    margin: 10px 0 15px;
+    color: #94a3b8;
+
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+.timeline-content li{
+    margin-bottom: 8px;
+}
