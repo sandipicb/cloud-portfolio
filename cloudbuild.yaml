@@ -13,14 +13,14 @@ steps:
     args: 
       - 'build'
       - '-t'
-      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$BUILD_ID'
+      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$COMMIT_SHA'
       - '.'
 
   # 3. Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$BUILD_ID'
+      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$COMMIT_SHA'
 
   # 4. Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -30,7 +30,7 @@ steps:
       - 'deploy'
       - 'portfolio-site'
       - '--image'
-      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$BUILD_ID'
+      - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$COMMIT_SHA'
       - '--region'
       - 'us-central1'
       - '--platform'
@@ -38,7 +38,7 @@ steps:
       - '--allow-unauthenticated'
 
 images:
- - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$BUILD_ID'
+ - 'us-central1-docker.pkg.dev/sandip-cloud-portfolio/portfolio-repo/portfolio-site:$COMMIT_SHA'
 
 options:
   logging: CLOUD_LOGGING_ONLY
